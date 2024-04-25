@@ -25,7 +25,7 @@
         checks.formatting = treefmtEval.${system}.config.build.check self;
 
         devShells.default = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [ zigpkgs.master libisoburn qemu_full grub2 ];
+          nativeBuildInputs = with pkgs; [ zigpkgs."0.11.0" libisoburn qemu_full grub2 ];
 
           shellHook = ''
             export PS1="\n[nix-shell:\w]$ "
