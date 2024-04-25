@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mkdir -p zig-out/bin
 zig cc -c -target x86-freestanding-eabi -o zig-out/bin/initcode.o src/initcode.S
